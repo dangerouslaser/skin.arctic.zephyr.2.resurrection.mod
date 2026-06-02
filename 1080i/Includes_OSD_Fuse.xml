@@ -350,7 +350,7 @@
                 <aligny>center</aligny>
                 <label>$VAR[Label_OSD_Time]</label>
                 <textcolor>panel_fg_100</textcolor>
-                <font>font_medium</font>
+                <font>font_small_28</font>
             </control>
             <control type="label">
                 <height>12</height>
@@ -361,7 +361,7 @@
                 <aligny>center</aligny>
                 <label>$VAR[Label_OSD_Duration]</label>
                 <textcolor>panel_fg_100</textcolor>
-                <font>font_medium</font>
+                <font>font_small_28</font>
             </control>
         </include>
     <include name="OSD_Progress_Bar_Fuse">
