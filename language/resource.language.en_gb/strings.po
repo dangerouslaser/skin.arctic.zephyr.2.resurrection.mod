@@ -2258,3 +2258,64 @@ msgstr ""
 msgctxt "#31598"
 msgid "Simple OSD info with poster"
 msgstr ""
+
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32600"
+msgid "Profile"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32601"
+msgid "Playback Speed"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32602"
+msgid "Playing"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32603"
+msgid "REC"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32604"
+msgid "Seek to"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32605"
+msgid "Cast and more info"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32606"
+msgid "Bookmarks and chapters"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32607"
+msgid "Channels"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32608"
+msgid "Playlist"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32609"
+msgid "Crew"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32610"
+msgid "More by this artist"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32611"
+msgid "Channel EPG"
+msgstr ""

@@ -2024,7 +2024,7 @@
             <value condition="Window.IsVisible(servicesettings)">$LOCALIZE[14036] $LOCALIZE[5]</value>
             <value condition="Window.IsVisible(pvrsettings)">$LOCALIZE[14204] $LOCALIZE[5]</value>
             <value condition="Window.IsVisible(systeminfo)">[CAPITALIZE]$LOCALIZE[138][/CAPITALIZE]</value>
-            <value condition="Window.IsVisible(SettingsProfile.xml)">$LOCALIZE[31053] $LOCALIZE[5]</value>
+            <value condition="Window.IsVisible(SettingsProfile.xml)">$LOCALIZE[32600] $LOCALIZE[5]</value>
             <value condition="Window.IsVisible(filemanager)">$LOCALIZE[10003]</value>
             <value condition="Window.IsVisible(eventlog)">[CAPITALIZE]$LOCALIZE[10050][/CAPITALIZE]</value>
             <value condition="Window.IsVisible(musicplaylisteditor)">[CAPITALIZE]$LOCALIZE[10503][/CAPITALIZE]</value>
@@ -2050,7 +2050,7 @@
         </variable>
     <variable name="Label_OSD_Header">
             <value condition="!String.IsEmpty(PVR.ChannelNumberInput)">$INFO[PVR.ChannelNumberInput,$LOCALIZE[19165] ,]</value>
-            <value condition="!String.IsEmpty(Player.SeekNumeric)">$INFO[Player.SeekNumeric,$LOCALIZE[31233] ,]</value>
+            <value condition="!String.IsEmpty(Player.SeekNumeric)">$INFO[Player.SeekNumeric,$LOCALIZE[32604] ,]</value>
             <value condition="Player.Forwarding32x">FF 32x</value>
             <value condition="Player.Forwarding16x">FF 16x</value>
             <value condition="Player.Forwarding8x">FF 8x</value>
@@ -2066,13 +2066,13 @@
             <value condition="[Player.Seeking | Player.HasPerformedSeek(3)] + !String.IsEmpty(Player.SeekOffset)">$LOCALIZE[773]$INFO[Player.SeekOffset, ,]</value>
             <value condition="Player.Seeking + String.IsEmpty(Player.SeekOffset)">$LOCALIZE[773]$INFO[Player.SeekStepSize, ,]</value>
             <value condition="Player.Caching">$LOCALIZE[439] $INFO[Player.CacheLevel,,%]</value>
-            <value condition="!String.IsEmpty(Player.PlaySpeed) + !String.IsEqual(Player.PlaySpeed,1.00) + !String.IsEqual(Player.PlaySpeed,0.00)">$INFO[Player.PlaySpeed,$LOCALIZE[31071] ,x]</value>
+            <value condition="!String.IsEmpty(Player.PlaySpeed) + !String.IsEqual(Player.PlaySpeed,1.00) + !String.IsEqual(Player.PlaySpeed,0.00)">$INFO[Player.PlaySpeed,$LOCALIZE[32601] ,x]</value>
             <value condition="!String.IsEmpty(Player.Chapter) + !String.IsEqual(Player.Chapter,00) + !String.IsEmpty(Player.ChapterCount) + !String.IsEqual(Player.ChapterCount,00) + [Player.Seeking | Player.HasPerformedSeek(3) | Integer.IsEqual(System.CurrentControlID,8200)]">$INFO[Player.Chapter,$LOCALIZE[21396] ,]$INFO[Player.ChapterCount, / ,]$INFO[Player.ChapterName, - ,]</value>
             <value condition="Player.Paused">$LOCALIZE[112]</value>
-            <value>$LOCALIZE[31134]</value>
+            <value>$LOCALIZE[32602]</value>
         </variable>
     <variable name="Label_OSD_HintText">
-            <value condition="Window.IsVisible(1141)">$LOCALIZE[31301]</value>
+            <value condition="Window.IsVisible(1141)">$LOCALIZE[32609]</value>
             <value condition="Window.IsVisible(pvrosdchannels)" />
             <value condition="Window.IsVisible(videobookmarks)">$VAR[Label_OSD_HintText_VideoBookmarks]</value>
             <value condition="Window.IsVisible(1140)">$VAR[Label_OSD_HintText_1140]</value>
@@ -2080,27 +2080,27 @@
             <value>$VAR[Label_OSD_HintText_Main]</value>
         </variable>
     <variable name="Label_OSD_HintText_1140">
-            <value condition="VideoPlayer.Content(livetv) + !Skin.HasSetting(OSD.OnDown.DisablePVROSDGuide)">$LOCALIZE[31348]</value>
+            <value condition="VideoPlayer.Content(livetv) + !Skin.HasSetting(OSD.OnDown.DisablePVROSDGuide)">$LOCALIZE[32611]</value>
             <value condition="VideoPlayer.Content(livetv)">$VAR[Label_OSD_HintText_PVROSDGuide]</value>
-            <value condition="!Skin.HasSetting(OSD.OnDown.DisableVideoBookmarks)">$LOCALIZE[31294]</value>
+            <value condition="!Skin.HasSetting(OSD.OnDown.DisableVideoBookmarks)">$LOCALIZE[32606]</value>
             <value>$VAR[Label_OSD_HintText_VideoBookmarks]</value>
         </variable>
     <variable name="Label_OSD_HintText_Main">
-            <value condition="VideoPlayer.Content(livetv) + !Skin.HasSetting(OSD.OnDown.DisablePVROSDGuide)">$LOCALIZE[31348]</value>
+            <value condition="VideoPlayer.Content(livetv) + !Skin.HasSetting(OSD.OnDown.DisablePVROSDGuide)">$LOCALIZE[32611]</value>
             <value condition="VideoPlayer.Content(livetv)">$VAR[Label_OSD_HintText_PVROSDGuide]</value>
-            <value condition="$EXP[Exp_OSD_HasPlaylist] + !Skin.HasSetting(OSD.OnDown.Disable1140)">$LOCALIZE[31296]</value>
+            <value condition="$EXP[Exp_OSD_HasPlaylist] + !Skin.HasSetting(OSD.OnDown.Disable1140)">$LOCALIZE[32608]</value>
             <value condition="$EXP[Exp_OSD_HasPlaylist]">$VAR[Label_OSD_HintText_1140]</value>
-            <value condition="!Skin.HasSetting(OSD.OnDown.DisableVideoBookmarks)">$LOCALIZE[31294]</value>
+            <value condition="!Skin.HasSetting(OSD.OnDown.DisableVideoBookmarks)">$LOCALIZE[32606]</value>
             <value>$VAR[Label_OSD_HintText_VideoBookmarks]</value>
         </variable>
     <variable name="Label_OSD_HintText_PVROSDGuide">
-            <value condition="!Skin.HasSetting(OSD.OnDown.DisablePVROSDChannels)">$LOCALIZE[31295]</value>
+            <value condition="!Skin.HasSetting(OSD.OnDown.DisablePVROSDChannels)">$LOCALIZE[32607]</value>
         </variable>
     <variable name="Label_OSD_HintText_VideoBookmarks">
-            <value condition="!Skin.HasSetting(OSD.OnDown.Disable1141)">$LOCALIZE[31293]</value>
+            <value condition="!Skin.HasSetting(OSD.OnDown.Disable1141)">$LOCALIZE[32605]</value>
         </variable>
     <variable name="Label_OSD_PVR_Recording">
-            <value condition="PVR.IsRecordingPlayingChannel">$LOCALIZE[31160]</value>
+            <value condition="PVR.IsRecordingPlayingChannel">$LOCALIZE[32603]</value>
         </variable>
 
     <!-- from Includes_Expressions.xml -->
