@@ -610,7 +610,7 @@
                 <itemlayout width="714" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                     <control type="image">
                         <centertop>53%</centertop>
-                        <height>64</height>
+                        <height>home_menu_icon_height</height>
                         <left>-10</left>
                         <aspectratio>keep</aspectratio>
                         <width>item_list_height</width>
@@ -630,7 +630,7 @@
                 <focusedlayout width="714" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                     <control type="image">
                         <centertop>53%</centertop>
-                        <height>64</height>
+                        <height>home_menu_icon_height</height>
                         <left>-10</left>
                         <aspectratio>keep</aspectratio>
                         <width>item_list_height</width>
@@ -649,7 +649,7 @@
                 <itemlayout width="400" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                     <control type="image">
                         <centertop>53%</centertop>
-                        <height>64</height>
+                        <height>home_menu_icon_height</height>
                         <right>330</right>
                         <aspectratio>keep</aspectratio>
                         <width>item_list_height</width>
@@ -661,7 +661,7 @@
                 <focusedlayout width="400" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                     <control type="image">
                         <centertop>53%</centertop>
-                        <height>64</height>
+                        <height>home_menu_icon_height</height>
                         <right>330</right>
                         <aspectratio>keep</aspectratio>
                         <width>item_list_height</width>
@@ -740,7 +740,7 @@
                         <itemlayout width="400" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                             <control type="image">
                                 <centertop>53%</centertop>
-                                <height>64</height>
+                                <height>home_menu_icon_height</height>
                                 <right>330</right>
                                 <aspectratio>keep</aspectratio>
                                 <width>item_list_height</width>
@@ -750,7 +750,7 @@
                         <focusedlayout width="400" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                             <control type="image">
                                 <centertop>53%</centertop>
-                                <height>64</height>
+                                <height>home_menu_icon_height</height>
                                 <right>330</right>
                                 <aspectratio>keep</aspectratio>
                                 <width>item_list_height</width>
@@ -969,7 +969,7 @@
                             <itemlayout width="257.14" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -987,7 +987,7 @@
                             <focusedlayout width="257.14" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1006,7 +1006,7 @@
                             <itemlayout width="257.14" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1016,7 +1016,7 @@
                             <focusedlayout width="257.14" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1225,7 +1225,7 @@
                             <itemlayout width="257.14" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1243,7 +1243,7 @@
                             <focusedlayout width="257.14" height="item_list_height" condition="Skin.HasSetting(HomeIcons) + !Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1262,7 +1262,7 @@
                             <itemlayout width="257.14" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>
@@ -1272,7 +1272,7 @@
                             <focusedlayout width="257.14" height="item_list_height" condition="!Skin.HasSetting(HomeIcons) + Skin.HasSetting(VerticalIconsOnly)">
                                 <control type="image">
                                     <centertop>53%</centertop>
-                                    <height>64</height>
+                                    <height>home_menu_icon_height</height>
                                     <right>0</right>
                                     <aspectratio>keep</aspectratio>
                                     <width>item_list_height</width>

@@ -24,6 +24,8 @@
     <constant name="item_smallsquare_iconheight">290</constant>
 
     <constant name="menu_itemgap">30</constant>
+    <!-- Home menu list-item icon height -->
+    <constant name="home_menu_icon_height">64</constant>
 
     <!-- OSD playback control button icon size -->
     <constant name="osd_button_size">48</constant>
