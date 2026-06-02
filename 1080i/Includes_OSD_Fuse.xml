@@ -345,7 +345,7 @@
                 <height>12</height>
                 <left>view_pad</left>
                 <right>view_pad</right>
-                <centerbottom>182</centerbottom>
+                <centerbottom>212</centerbottom>
                 <align>left</align>
                 <aligny>center</aligny>
                 <label>$VAR[Label_OSD_Time]</label>
@@ -356,7 +356,7 @@
                 <height>12</height>
                 <left>view_pad</left>
                 <right>view_pad</right>
-                <centerbottom>182</centerbottom>
+                <centerbottom>212</centerbottom>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$VAR[Label_OSD_Duration]</label>
