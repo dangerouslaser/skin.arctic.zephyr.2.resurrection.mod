@@ -2319,3 +2319,13 @@ msgstr ""
 msgctxt "#32611"
 msgid "Channel EPG"
 msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32612"
+msgid "Press down"
+msgstr ""
+
+#: OSD port (Arctic Fuse 3)
+msgctxt "#32613"
+msgid "Press right"
+msgstr ""

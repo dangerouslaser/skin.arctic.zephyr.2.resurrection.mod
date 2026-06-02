@@ -2107,4 +2107,32 @@
     <expression name="Exp_OSD_DelayInfo_Timing">[[System.IdleTime(3)] | [System.IdleTime(2) + Skin.String(OSD.AutoOnPause.Delay,2s)] | [System.IdleTime(1) + Skin.String(OSD.AutoOnPause.Delay,1s)] | [System.IdleTime(0) + Skin.String(OSD.AutoOnPause.Delay,0s)]]</expression>
     <expression name="Exp_OSD_HideControls">[Window.IsActive(1140) | Window.IsActive(1141) | Window.IsActive(1142) | Window.IsActive(videobookmarks) | Window.IsActive(pvrosdguide) | Window.IsActive(pvrosdchannels) | Window.IsActive(script-upnext-stillwatching.xml) | Window.IsActive(script-upnext-upnext.xml)]</expression>
     <expression name="Exp_InfoDialogs">[Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</expression>
+
+    <!-- Missing $PARAM-constructed variants (View_Line_Divider, CastInfo direction labels) -->
+    <include name="View_Line_Divider_left">
+        <left>0</left>
+        <texture colordiffuse="main_fg_12" flipx="true">common/gradient-box.png</texture>
+    </include>
+    <include name="View_Line_Divider_right">
+        <right>0</right>
+        <texture colordiffuse="main_fg_12" flipx="false">common/gradient-box.png</texture>
+    </include>
+    <include name="OSD_CastInfo_HintText_DirectionLabel">
+        <control type="label">
+            <textcolor>main_fg_30</textcolor>
+            <width>auto</width>
+            <font>font_tiny_bold</font>
+            <label>$PARAM[label]:  </label>
+        </control>
+    </include>
+    <include name="OSD_CastInfo_HintText_DirectionLabel_down">
+        <include content="OSD_CastInfo_HintText_DirectionLabel">
+            <param name="label">$LOCALIZE[32612]</param>
+        </include>
+    </include>
+    <include name="OSD_CastInfo_HintText_DirectionLabel_right">
+        <include content="OSD_CastInfo_HintText_DirectionLabel">
+            <param name="label">$LOCALIZE[32613]</param>
+        </include>
+    </include>
 </includes>
