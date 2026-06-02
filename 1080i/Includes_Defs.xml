@@ -53,12 +53,6 @@
         <pauseatend>$PARAM[time]</pauseatend>
     </include>
 
-    <include name="Defs_PauseAtEnd">
-        <include content="Defs_AutoScroll">
-            <param name="include" value="Defs_PauseAtEnd_Value" />
-        </include>
-    </include>
-
     <include name="Defs_TimePerImage_Value">
         <timeperimage>$PARAM[time]</timeperimage>
     </include>
@@ -744,14 +738,6 @@
         <height>item_list_height</height>
         <textoffsetx>30</textoffsetx>
         <focusedcolor>$VAR[Defs_Settings_ToggleButton_Text]</focusedcolor>
-    </include>
-    <include name="Defs_RadioButton_NoTexture">
-        <textureradioondisabled />
-        <textureradiooffdisabled />
-        <textureradioonfocus />
-        <textureradioofffocus />
-        <textureradioonnofocus />
-        <textureradiooffnofocus />
     </include>
     <!-- Shadows -->
     <include name="Defs_Shadow_20">

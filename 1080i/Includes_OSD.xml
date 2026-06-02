@@ -21,10 +21,6 @@
     <include name="OSD_Right580">
         <right>580</right>
     </include>
-    <include name="OSD_Right0">
-        <right>0</right>
-    </include>
-
     <include name="OSD_Music_Info_Image_Circle">
         <param name="artwork" default="Player.Art(albumartist.thumb)" />
         <param name="fallback" default="DefaultArtist.png" />

@@ -760,27 +760,6 @@
         <orientation>vertical</orientation>
     </include>
 
-    <include name="View_Horizontal">
-        <oninfo condition="ListItem.IsCollection">ActivateWindow(1140)</oninfo>
-        <onup>SetFocus(300)</onup>
-        <ondown>60</ondown>
-        <orientation>horizontal</orientation>
-    </include>
-
-    <include name="View_Vertical_Cast">
-        <onback>8000</onback>
-        <orientation>vertical</orientation>
-    </include>
-    <include name="View_Vertical_Back">
-        <onback>8000</onback>
-        <orientation>vertical</orientation>
-    </include>
-    <include name="View_Horizontal_Back">
-        <onback>SetFocus(5050)</onback>
-        <onback>8000</onback>
-        <orientation>horizontal</orientation>
-    </include>
-
     <include name="View_TopItems_Itemlayout">
         <param name="icon" default="$INFO[ListItem.Icon]" />
         <param name="bordersize" default="0" />
@@ -1239,18 +1218,6 @@
             </control>
             <include condition="$PARAM[overlay]">View_WatchedOverlay_Focus</include>
         </definition>
-    </include>
-
-    <include name="View_Movement_Horizontal">
-        <onright condition="Control.IsVisible(60)">60</onright>
-        <onright condition="!Control.IsVisible(60)">300</onright>
-        <onleft>300</onleft>
-    </include>
-
-    <include name="View_Movement_Vertical">
-        <ondown condition="Control.IsVisible(60)">60</ondown>
-        <ondown condition="!Control.IsVisible(60)">300</ondown>
-        <onup>300</onup>
     </include>
 
 </includes>

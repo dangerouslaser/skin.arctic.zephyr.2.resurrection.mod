@@ -29,17 +29,6 @@
         </animation>
     </include>
 
-    <include name="Animation_Down">
-        <animation type="Visible" reversible="false">
-            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out"/>
-            <effect type="slide" start="0,320" end="0" time="400" tween="cubic" easing="out" />
-        </animation>
-        <animation type="Hidden" reversible="false">
-            <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-            <effect type="slide" start="0" end="0,320" time="300" tween="cubic" easing="out" />
-        </animation>
-    </include>
-
     <include name="Animation_Common">
         <animation type="WindowOpen" reversible="false" condition="!Window.Previous(SettingsCategory.xml) + !Window.Previous(SettingsSystemInfo.xml) + !Window.Previous(SkinSettings.xml) + !Window.Previous(SettingsProfile.xml) + !Window.Previous(eventlog)">
             <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
@@ -87,28 +76,6 @@
             <effect type="zoom" start="100" end="85" center="auto" tween="sine" delay="0" easing="out" time="300" />
             <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="0" time="300" />
         </animation>
-    </include>
-
-    <include name="Animation_Common_Delay">
-        <animation type="WindowOpen" reversible="false">
-            <effect type="fade" start="0" end="100" time="300" delay="400" tween="sine" easing="in" />
-            <effect type="zoom" start="50" end="100" time="300" delay="400" center="auto" tween="quadratic" easing="out" />
-        </animation>
-        <animation type="WindowClose" reversible="false">
-            <effect type="fade" end="0" start="100" time="200" tween="sine" easing="out" />
-            <effect type="zoom" end="75" start="100" time="200" center="auto" tween="quadratic" easing="in" />
-        </animation>
-
-        <animation type="Visible" reversible="false">
-            <effect type="fade" start="0" end="100" time="300" delay="400" tween="sine" easing="in" />
-            <effect type="zoom" start="115" end="100" time="300" delay="400" center="auto" tween="sine" easing="out" />
-        </animation>
-
-        <animation type="Hidden" reversible="false">
-            <effect type="zoom" start="100" end="85" center="auto" tween="sine" delay="0" easing="out" time="300" />
-            <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="0" time="300" />
-        </animation>
-
     </include>
 
     <include name="Animation_Left">
@@ -295,17 +262,6 @@
         <animation effect="slide" end="0,-205" time="600" tween="cubic" easing="inout" reversible="true" condition="Integer.IsGreater(Container(3000).Position,38)">Conditional</animation>
         <animation effect="slide" end="0,-205" time="600" tween="cubic" easing="inout" reversible="true" condition="Integer.IsGreater(Container(3000).Position,39)">Conditional</animation>
         <animation effect="slide" end="0,-205" time="600" tween="cubic" easing="inout" reversible="true" condition="Integer.IsGreater(Container(3000).Position,40)">Conditional</animation>
-    </include>
-
-    <include name="Animation_Flix_AlarmDelay">
-        <animation effect="slide" end="0,0" time="3000" reversible="false" condition="String.IsEmpty(Skin.String(Trailer_Delay))">Focus</animation>
-        <animation effect="slide" end="0,0" time="3000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:03)">Focus</animation>
-        <animation effect="slide" end="0,0" time="6000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:06)">Focus</animation>
-        <animation effect="slide" end="0,0" time="9000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:09)">Focus</animation>
-        <animation effect="slide" end="0,0" time="14000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:14)">Focus</animation>
-        <animation effect="slide" end="0,0" time="19000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:19)">Focus</animation>
-        <animation effect="slide" end="0,0" time="29000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:29)">Focus</animation>
-        <animation effect="slide" end="0,0" time="59000" reversible="false" condition="String.IsEqual(Skin.String(Trailer_Delay),00:59)">Focus</animation>
     </include>
 
     <include name="Animation_Alpha_Value">
