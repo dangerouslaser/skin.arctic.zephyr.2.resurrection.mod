@@ -148,7 +148,7 @@
                             <include condition="!Skin.HasSetting(DisableMusicOSDArtistImage) + !Skin.HasSetting(UseLongMusicOSD)">OSD_Right170</include>
                             <include condition="Skin.HasSetting(DisableMusicOSDArtistImage) + !Skin.HasSetting(UseLongMusicOSD)">OSD_RightSide</include>
                             <bottom>140</bottom>
-                            <height>12</height>
+                            <height>osd_seekbar_height</height>
                             <info>Player.Progress</info>
                             <visible>Player.HasMedia</visible>
                         </control>
@@ -397,12 +397,12 @@
                     </control>
 
                     <control type="group">
-                        <height>12</height>
+                        <height>osd_seekbar_height</height>
                         <top>110</top>
                         <left>30</left>
                         <control type="progress" description="cache">
                             <width>100%</width>
-                            <height>12</height>
+                            <height>osd_seekbar_height</height>
                             <info>Player.ProgressCache</info>
                             <texturebg colordiffuse="00ffffff" border="4">diffuse/progress-bg.png</texturebg>
                             <lefttexture colordiffuse="panel_fg_12" border="4">diffuse/progress-left.png</lefttexture>
@@ -415,7 +415,7 @@
 
                         <control type="progress" id="498">
                             <width>100%</width>
-                            <height>12</height>
+                            <height>osd_seekbar_height</height>
 
                             <info>PVR.EpgEventProgress</info>
                             <visible>Pvr.IsPlayingTv</visible>
@@ -423,7 +423,7 @@
                         <control type="progress">
                             <description>Progressbar</description>
                             <width>100%</width>
-                            <height>12</height>
+                            <height>osd_seekbar_height</height>
 
                             <info>PVR.EpgEventProgress</info>
                             <texturebg colordiffuse="00ffffff" border="6">diffuse/progress-bg.png</texturebg>
@@ -438,7 +438,7 @@
 
                         <control type="slider" id="402">
                             <width>100%</width>
-                            <height>12</height>
+                            <height>osd_seekbar_height</height>
                             <visible>Player.HasMedia</visible>
                             <animation effect="fade" start="100" end="0" condition="!Player.Seeking" reversible="false" delay="300" time="0">Conditional</animation>
                             <animation effect="fade" start="0" end="100" condition="Player.Seeking" reversible="false" time="0">Conditional</animation>
@@ -1035,13 +1035,13 @@
 
     <include name="OSD_Progress_Bar">
         <control type="group">
-            <height>12</height>
+            <height>osd_seekbar_height</height>
             <left>view_pad</left>
             <right>view_pad</right>
             <bottom>100</bottom>
             <control type="progress" description="cache">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <info>Player.ProgressCache</info>
                 <texturebg colordiffuse="00ffffff" border="4">diffuse/progress-bg.png</texturebg>
                 <lefttexture colordiffuse="panel_fg_12" border="4">diffuse/progress-left.png</lefttexture>
@@ -1054,14 +1054,14 @@
 
             <control type="progress" id="499">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <info>Player.Progress</info>
                 <visible>Player.HasMedia + !Pvr.IsPlayingTv</visible>
             </control>
             <control type="progress">
                 <description>Progressbar</description>
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
 
                 <info>Player.Progress</info>
                 <texturebg colordiffuse="00ffffff" border="6">diffuse/progress-bg.png</texturebg>
@@ -1076,14 +1076,14 @@
 
             <control type="progress" id="498">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <info>PVR.EpgEventProgress</info>
                 <visible>Pvr.IsPlayingTv</visible>
             </control>
             <control type="progress">
                 <description>Progressbar</description>
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
 
                 <info>PVR.EpgEventProgress</info>
                 <texturebg colordiffuse="00ffffff" border="6">diffuse/progress-bg.png</texturebg>
@@ -1098,7 +1098,7 @@
 
             <control type="progress" id="401">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <visible>Player.HasMedia</visible>
                 <animation effect="fade" start="100" end="0" condition="!Player.Seeking" reversible="false" delay="300" time="0">Conditional</animation>
                 <animation effect="fade" start="0" end="100" condition="Player.Seeking" reversible="false" time="0">Conditional</animation>
@@ -1111,7 +1111,7 @@
 
             <control type="slider" id="402">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <visible>Player.HasMedia</visible>
                 <animation effect="fade" start="100" end="0" condition="!Player.Seeking" reversible="false" delay="300" time="0">Conditional</animation>
                 <animation effect="fade" start="0" end="100" condition="Player.Seeking" reversible="false" time="0">Conditional</animation>
@@ -1124,7 +1124,7 @@
             <!-- CutList and Chapters Range -->
             <control type="ranges">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <texturebg colordiffuse="00ffffff">progress/marker-bg.png</texturebg>
                 <righttexture colordiffuse="panel_fg_50">progress/marker.png</righttexture>
                 <info>Player.CutList</info>
@@ -1132,7 +1132,7 @@
             </control>
             <control type="ranges">
                 <width>100%</width>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
                 <texturebg colordiffuse="00ffffff">progress/marker-bg.png</texturebg>
                 <righttexture colordiffuse="panel_fg_50">progress/marker.png</righttexture>
                 <info>Player.Chapters</info>
@@ -2265,7 +2265,7 @@
                 <colordiffuse>$PARAM[progresscolor]</colordiffuse>
                 <texture border="12,0,12,0">progress/progress-nib.png</texture>
                 <centertop>50%</centertop>
-                <height>12</height>
+                <height>osd_seekbar_height</height>
             </control>
             <control type="group">
                 <left>6</left>

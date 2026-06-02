@@ -27,6 +27,8 @@
 
     <!-- OSD playback control button icon size -->
     <constant name="osd_button_size">48</constant>
+    <!-- OSD seek / progress bar thickness -->
+    <constant name="osd_seekbar_height">12</constant>
 
     <constant name="dialog_top">90</constant>
     <constant name="dialog_pad">30</constant>
